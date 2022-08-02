@@ -1,0 +1,194 @@
+<header
+  class="bg-main1 border-b-[1px] border-ghostwhite fixed flex items-center top-0 left-0 w-full"
+>
+  <div class="container">
+    <div class="flex items-center justify-between relative">
+      <div class="px-5 lg:ml-40">
+        <a href="#home"
+          ><img
+            src="../public/img/note2.png"
+            alt=""
+            class="py-6 inline-block"
+          />
+          <p
+            class="text-xl font-bold inline-block text-transparent bg-clip-text bg-gradient-to-b from-ghostwhite to-purple-500 lg:text-2xl"
+          >
+            Todo-list
+          </p></a
+        >
+      </div>
+
+      <div class="flex items-center px-5">
+        <button
+          class="block right-5 absolute stack lg:hidden"
+          type="button"
+          name="stack"
+        >
+          <span class="stack-line"></span>
+          <span class="stack-line"></span>
+          <span class="stack-line"></span>
+        </button>
+        <nav
+          id="navbar"
+          class="hidden absolute py-4 bg-ghostwhite top-20 right-5 w-full max-w-[240px] shadow-md rounded-lg lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none"
+        >
+          <ul class="block lg:flex">
+            <li class="group">
+              <a
+                href="#home"
+                class="flex mx-7 py-2 text-base text-dark lg:text-ghostwhite lg:group-hover:bg-transparent group-hover:bg-dark group-hover:text-ghostwhite group-hover:rounded-md group-hover:px-2 group-hover:mx-0"
+                ><i class="fa-solid fa-house mr-2"></i>Home</a
+              >
+            </li>
+            <li class="group">
+              <a
+                href="#about"
+                class="flex mx-7 py-2 text-base text-dark lg:text-ghostwhite lg:group-hover:bg-transparent group-hover:bg-dark group-hover:text-ghostwhite group-hover:rounded-md group-hover:px-2 group-hover:mx-0"
+                ><i class="fa-solid fa-circle-question mr-2"></i>Info</a
+              >
+            </li>
+            <li class="group">
+              <a
+                href="/todo"
+                class="flex mx-7 py-2 text-base text-dark lg:text-ghostwhite lg:group-hover:bg-transparent group-hover:bg-dark group-hover:text-ghostwhite group-hover:rounded-md group-hover:px-2 group-hover:mx-0"
+                ><i class="fa-solid fa-table-list mr-2"></i>Todo list</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="home" class="pt-36">
+  <div class="bg-dark">
+    <div
+      class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
+    >
+      <div
+        class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
+      >
+        <h1 class="sm:text-4xl text-3xl mb-4 font-bold text-ghostwhite">
+          Todo List app, <br class="hidden lg:block" />
+          apk sederhana yg membuat anda ga nganggur
+        </h1>
+        <p class="mb-8 leading-relaxed text-ghostwhite text-xl">
+          Todo list apk untuk menjadwalkan kegiatan apa yg mau anda lakukan
+          untuk hari ini dan besok
+        </p>
+        <div class="flex justify-center">
+          <button
+            class="text-white bg-indigo-600 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-700 rounded-full text-lg transition duration-200 ease-out font-bold"
+          >
+            <a href="/todo">Mulai menjadwal</a>
+          </button>
+        </div>
+      </div>
+      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+        <img
+          class="w-full md:mx-auto"
+          alt="hero"
+          src="../public/img/note.png"
+        />
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#3C3B6E"
+        fill-opacity="1"
+        d="M0,32L1440,192L1440,320L0,320Z"
+        data-darkreader-inline-fill=""
+        style="--darkreader-inline-fill: #007acc"
+      ></path>
+    </svg>
+  </div>
+</section>
+<section id="about" class="pt-10">
+  <div class="container mx-auto">
+    <div class="w-full px-4">
+      <div class="max-w-xl mx-auto text-center mb-16">
+        <h2
+          class="text-3xl font-bold underline underline-offset-2 text-ghostwhite uppercase mt-3 sm:text-4xl"
+        >
+          Manfaat apk ini
+        </h2>
+      </div>
+    </div>
+    <div class="flex flex-wrap justify-center">
+      <div class="w-full px-4 md:w-1/2 lg:w-1/2 xl:w-1/3">
+        <div
+          class="bg-yellow-500 rounded-xl shadow-lg overflow-hidden mb-10 text-center"
+        >
+          <img
+            src="../public/img/clock.png"
+            alt=""
+            class="h-35 w-40 mx-auto hover:scale-125 transition duration-200 ease-out mt-4"
+          />
+          <div class="py-6 px-6">
+            <h3 class="text-2xl text-dark font-bold">Mudah Mengatur Waktu</h3>
+            <p class="text-base mt-2">
+              anda jadi mudah mengatur waktu untuk melakukan berbagai aktivitas
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="w-full px-4 md:w-1/2 lg:w-1/2 xl:w-1/3">
+        <div
+          class="bg-yellow-500 rounded-xl shadow-lg overflow-hidden mb-10 text-center"
+        >
+          <img
+            src="../public/img/fast.png"
+            alt=""
+            class="h-35 w-40 mx-auto hover:scale-125 transition duration-200 ease-out mt-4"
+          />
+          <div class="py-6 px-6">
+            <h3 class="text-2xl text-dark font-semibold">
+              Meningkatkan Produktivitas
+            </h3>
+            <p class="text-base mt-2">
+              Mudah meninjau daftar dan memprioritaskan tugas yang paling
+              penting
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="w-full px-4 md:w-1/2 lg:w-1/2 xl:w-1/3">
+        <div
+          class="bg-yellow-500 rounded-xl shadow-lg overflow-hidden mb-10 text-center"
+        >
+          <img
+            src="../public/img/brain.png"
+            alt=""
+            class="h-35 w-40 mx-auto hover:scale-125 transition duration-200 ease-out mt-4"
+          />
+          <div class="py-6 px-6">
+            <h3 class="text-2xl text-dark font-semibold">
+              Meningkatkan Daya Ingat
+            </h3>
+            <p class="text-base mt-2">
+              dapat meningkatkan daya ingat dan dapat membantu Anda memastikan
+              semua tugas penting anda selesai tepat waktu.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path
+      fill="#31314d"
+      fill-opacity="1"
+      d="M0,128L120,149.3C240,171,480,213,720,213.3C960,213,1200,171,1320,149.3L1440,128L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"
+    ></path>
+  </svg>
+</section>
+<footer class="bg-dark text-center pb-4">
+  <p class="text-ghostwhite text-xl">
+    Created by
+    <span
+      class="bg-gradient-to-bl from-blue-600 bg-clip-text via-red-600 to-yellow-400 text-transparent font-bold"
+      >Hio F.A</span
+    >
+  </p>
+</footer>

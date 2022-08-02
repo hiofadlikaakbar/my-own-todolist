@@ -1,0 +1,89 @@
+<div
+  class="container px-5 md:px-0 flex flex-wrap justify-center mx-auto h-screen items-center"
+>
+  <img src="../public/img/thimking.gif" id="img" alt="" class="w-96" />
+  <div
+    class="w-full px-2 border-4 border-ghostwhite pb-2 max-w-lg bg-gradient-to-b from-[#4F46E5]/50 to-ghostwhite/50 m-0 -mt-56 md:-mt-80 lg:-mt-0 rounded-xl"
+  >
+    <h1 class="text-center text-ghostwhite text-4xl pt-10 font-bold">
+      Todo-list
+    </h1>
+    <div class="py-3 pb-4">
+      <div class="flex justify-center mt-3 gap-1 items-center mb-5">
+        <form action="/todo" method="post">
+          <input
+            name="content"
+            type="text"
+            placeholder="tulis sesuatu..."
+            class="w-44 md:w-80 border-none outline-none px-4 py-3 rounded-full bg-dark text-md text-ghostwhite"
+          />
+
+          <button
+            class="w-10 h-10 p-1 mr-2 bg-[#22C55E] outline-none rounded-full"
+            type="submit"
+          >
+            <i
+              class="fa-solid fa-plus mx-auto text-ghostwhite cursor-pointer"
+            ></i>
+          </button>
+        </form>
+      </div>
+      <ul>
+        <% lists.forEach(l => { %> <% if (l._id == id) { %>
+
+        <li
+          class="w-[90%] mx-auto mt-3 flex px-4 py-3 rounded-md items-center bg-zinc-900"
+        >
+          <form
+            action="/edit/<%= l._id %> "
+            method="post"
+            class="flex flex-wrap gap-5"
+          >
+            <input
+              type="text"
+              class="w-full md:w-fit rounded-md bg-ghostwhite px-4 py-2 outline-none"
+              value="<%= l.content %>"
+              name="content"
+            />
+            <span class="-mt-2 md:mt-0 flex items-center gap-3">
+              <button
+                type="submit"
+                class="bg-green-500 text-ghostwhite inline-block px-3 py-2 rounded-md"
+              >
+                Confirm
+              </button>
+              <button
+                class="bg-red-500 text-ghostwhite inline-block px-3 py-2 rounded-md"
+              >
+                <a href="/todo">Cancel</a>
+              </button>
+            </span>
+          </form>
+        </li>
+        <% } else { %>
+
+        <li
+          class="w-[90%] mx-auto mt-3 flex justify-between px-4 py-3 rounded-md items-center bg-zinc-900"
+        >
+          <p class="text-ghostwhite font-medium text-md lg:text-2xl">
+            <%= l.content %>
+          </p>
+          <span class="ml-auto flex items-center gap-4">
+            <a href="/edit/<%= l._id %> "
+              ><i
+                class="fa-solid fa-pen-to-square text-xl lg:text-3xl text-green-500"
+              ></i
+            ></a>
+            <a href="/remove/<%= l._id %> ">
+              <i
+                class="fa-solid fa-trash-can text-xl lg:text-3xl text-red-600"
+              ></i>
+            </a>
+          </span>
+        </li>
+
+        <% } %> <% }) %>
+      </ul>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.stack-line {
+  @apply w-[33px] h-[2px] block my-2 bg-black;
+}
